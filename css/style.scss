@@ -5,6 +5,7 @@ html, body{
 	font-size: 16px;
 	font-family: Helvetica;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 /* Layout */
@@ -152,3 +153,26 @@ textarea {
 .grid-item--height2 { height: 240px; }
 .grid-item--height3 { height: 260px; }
 .grid-item--height4 { height: 360px; }
+
+
+@media screen and (max-width: 650px) {
+	.header {
+		&__hero {
+
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.header {
+		&__hero {
+			img {
+				width: 70%;
+				height: auto;
+			}
+		}
+	}
+}
