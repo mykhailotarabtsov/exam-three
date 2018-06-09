@@ -1,0 +1,70 @@
+.header {
+	background: url('../img/Blur-photo.png') no-repeat 50% 50%;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	padding: 40px 0;
+
+	&__copyright {
+		color: #fff;
+		font-family: Helvetica;
+		font-size: 1.25rem;
+	}
+
+	&__hero {
+		background: url(../img/Final-version.png) no-repeat 50% 50%;
+		background-size: cover;
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+		position: relative;
+		width: 100%;
+
+		&:before {
+			content: 'Sreet';
+			display: block;
+			color: #D8D8D8;
+			font-size: 3rem;
+			position: absolute;
+			left: -5rem;
+			bottom: 10%;
+			transform: rotate(-90deg);
+		}
+		&:after {
+			content: 'Photo';
+			display: block;
+			color: #D8D8D8;
+			font-size: 3rem;
+			position: absolute;
+			right: -5.5rem;
+			top: 10%;
+			transform: rotate(90deg);
+		}
+	}
+
+	.bottom__nav {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+    transform: translateX(-50%);
+
+		li {
+			display: inline-block;
+
+			a {
+				display: block;
+				padding: 1em;
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+					color: #d8d8d8;
+				}
+			}
+		}
+	}
+}
